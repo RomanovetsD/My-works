@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
@@ -13,6 +14,71 @@
     <title>Document</title>
   </head>
   <body>
-    Mogo
+    <div class="fluid-header">
+      <div class="picture-map">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="
+              ./assets/images/eagle.jpg    1x,
+              ./assets/images/eagle@2x.jpg 2x
+            "
+          />
+          <img
+            src="./assets/images/eagle.jpg"
+            height="1000"
+            alt="eagle"
+            class="wrp-image"
+          />
+        </picture>
+      </div>
+
+      <div class="container">
+        <header class="row row-header">
+          <div class="logo-wrp col-1">
+            <a href="#"
+              ><img src="./assets/images/logo-min.png" alt="logo" class="logo"
+            /></a>
+          </div>
+          <nav class="nav-header col-5">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">About</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Service</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Work</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"
+                  ><img
+                    src="./assets/images/shopping_cart-min.png"
+                    alt="shopping_cart"
+                    class="menu__link--shopping_cart"
+                /></a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"
+                  ><img
+                    src="./assets/images/glass-min.png"
+                    alt="glass"
+                    class="menu__link--glass"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <h2 class="text-up">Creative Template</h2>
+      <h1 class="text-middle">Welcome to MOGO</h1>
+    </div>
   </body>
 </html>
