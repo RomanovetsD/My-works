@@ -2,142 +2,266 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext"
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300i,400,700&amp;subset=cyrillic-ext"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <title>Mogo</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
-          <div class="header__logo">MoGo</div>
-
-          <nav class="nav">
-            <a class="nav__link active" href="#">About</a>
-            <a class="nav__link" href="#">Service</a>
-            <a class="nav__link" href="#">Blog</a>
-            <a class="nav__link" href="#">Work</a>
-            <a class="nav__link" href="#">Contact</a>
-            <a class="nav__link" href="#">
-              <img src="assets/images/shopping_cart.png" alt="shopping_cart"
-            /></a>
-            <a class="nav__link" href="#"
-              ><img src="assets/images/glass.png" alt="glass"
-            /></a>
+          <div class="header__logo" data-scroll="#intro">
+            <img src="assets/images/logo.png" alt="logo" class="logo" />
+          </div>
+          <nav class="nav" id="nav">
+            <a class="nav__link" href="#about-us" >Про нас</a>
+            <a class="nav__link" href="#history" >Історія</a>
+            <a class="nav__link" href="#galary" >Галерея</a>
+            <a class="nav__link" href="#organization_add">Вступити в органзацію</a>
+            <a class="nav__link" href="#contacts">Контакти</a>
           </nav>
+          <button class="nav-toggle" id="nav_toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
         </div>
       </div>
     </header>
 
-    <div class="intro">
-      <div class="container">
-        <div class="intro__inner">
-          <h2 class="intro__suptitle">Creative Template</h2>
-          <h1 class="intro__title">Welcome to MoGo</h1>
-
-          <a class="btn" href="#">Learn More</a>
-        </div>
-      </div>
-
-      <div class="slider">
+    <div class="page">
+      <!-- Intro -->
+      <div class="intro" id="intro">
         <div class="container">
-          <div class="slider__inner">
-            <div class="slider__item active">
-              <span class="slider__num">01</span>
-              Intro
-            </div>
-            <div class="slider__item">
-              <span class="slider__num">02</span>
-              Work
-            </div>
-            <div class="slider__item">
-              <span class="slider__num">03</span>
-              About
-            </div>
-            <div class="slider__item">
-              <span class="slider__num">04</span>
-              Contacts
-            </div>
+          <div class="intro__inner">
+            <h2 class="intro__suptitle">ВСЕУКРАЇНСЬКЕ ГРОМАДСЬКЕ ОБ'ЄДНАННЯ</h2>
+            <h1 class="intro__title">"ВСЕУКРАЇНСЬКЕ КОЗАЦЬКЕ ВІЙСЬКО"</h1>
           </div>
         </div>
       </div>
+      <!-- /.intro -->
+
+      <!-- About -->
+      <section class="section" >
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" id="about-us">Українське козацтво в наш час.</h2>
+            <div class="section__text">
+              
+                <b>Українське козацтво в наш час.</b><br><br>
+                Сучасне Українське козацтво не є окремою козацькою організацією,
+                а являє собою Всеукраїнський козацький рух. Представниками цього
+                руху є нащадки козацьких родів, окремі громадяни, які вважають
+                себе козаками, та козацькі громадські організації, які
+                відстоюють національну козацьку ідею, сприяють захисту
+                політичних, економічних, культурних та історичних досягнень
+                Українського народу, беруть участь у забезпеченні духовного
+                розвитку, фізичного здоров'я та високої моральності українського
+                суспільства, використовуючи набутки багатьох поколінь своїх
+                попередників.<br><br>
+                <em>«Хто сьогодні може назвати себе українським козаком? Той, у кого
+                чисте сумління, душа правдива, незрадлива та справедлива, той,
+                хто активно діє як оборонець, захисник та рятівник українського
+                народу, державності, мови, культури, той, хто дбає про моральне
+                та фізичне здоров’я, духовний та матеріальний добробут
+                українського народу».  
+                Верховний Отаман Всеукраїнського козацького
+                війська. Каленяк Віталій Петрович.
+              </em>  
+              </p>
+              <div>
+              <img src="./assets/images/photo.jpg" alt="photo" class="photo" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /.About -->
+      </section>
+
+
+      <!-- History -->
+      <section class="section section__history" >
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" id="history">Історія створення</h2>
+            <div class="section__text">
+              <p>
+                Для забезпечення ефективної взаємодії органів державної влади, органів місцевого самоврядування з козацькими організаціями, їх об'єднаннями у питаннях забезпечення реалізації потенціалу козацької ідеї для консолідації українського суспільства, відродження та розвитку історичних, патріотичних, господарських, культурних, духовних і моральних традицій Українського козацтва, залучення козацьких організацій до охорони культурної спадщини, фізкультурно-спортивної роботи, військово-патріотичного та духовного виховання дітей і молоді Указом Президента України від 4 червня 2005 року
+          
+              </br>
+               N916/2005 утворено Раду Українського козацтва при Президентові України та призначено Аржевітіна Станіслава Михайловича її секретарем.
+              </br>
+              </br>
+               З метою забезпечення взаємодії місцевих органів виконавчої влади і козацьких організацій та їх об'єднань при Раді міністрів Автономної Республіки Крим, обласних, Київській та Севастопольській міських державних адміністраціях утворені та діють консультативно-дорадчі органи – Ради Українського козацтва.    
+              </br>
+              </br>     
+              Сучасне Українське козацтво об'єднує понад 700 козацьких організацій (юридичних осіб) чисельністю більше 300 тис. осіб. Із них близько 40 організацій – міжнародні та всеукраїнські, більше 255 – обласні, 263 – районні (районні у містах) та 176 – міські. На базі існуючих козацьких організацій сформовано близько 300 козацьких громадських формувань з охорони громадського порядку чисельністю 10 620 осіб, які співпрацюють з підрозділами Міністерства внутрішніх справ України та інших зацікавлених міністерств.
+              </br>
+              </br>
+              Спільною думкою центральних та місцевих органів виконавчої влади, органів місцевого самоврядування та громадськості є те, що затвердження Державної програми розвитку Українського козацтва дозволить у повному обсязі реалізувати потенціал козацької ідеї для консолідації українського суспільства, охорони культурної спадщини, для проведення фізкультурно-спортивної роботи та військово-патріотичного виховання молоді на кращих традиціях українського козацтва.
+              </br>
+              </br>
+              Розпорядженням Кабінету Міністрів України від 17.09.08 N1237-р схвалено "Концепцію Державної цільової національно-культурної програми розвитку Українського козацтва на 2009-2011 роки". Згідно з цим розпорядженням передбачено розробити і затвердити до кінця цього року Державну цільову національно-культурну програму розвитку Українського козацтва на 2009-2011 роки.
+              </br>
+              </br>
+              Що ж стосується проекту Закону України "Про засади відновлення та розвитку Українського козацтва, козацькі організації та їх об'єднання" то цей проект визначений Президентом України як невідкладний і 24 квітня 2008 р. поданий для позачергового його розгляду Верховною Радою України.
+              </br>
+              </br>
+              Після стабілізації роботи Верховної Ради президентський законопроект дістане схвалення українського парламенту.
+              </br>
+              </br>
+              У цей не простий для України і вирішальний для Українського козацтва час від козацьких організацій потребується всебічна підтримка ініціатив Президента України щодо консолідації українського суспільства, відродження історичної правди Українського народу, відновлення і збереження його культурної спадщини, залучення козацьких організацій до охорони культурної спадщини, фізкультурно-спортивної роботи та військово-патріотичного виховання молоді.
+              </br>
+              </br>
+              У 2008-2009 роках зусилля козацьких організацій направлені у першу чергу на реалізацію положень Указів Президента України від 9.10.2007 N955/2007 "Про відзначення 300-річчя подій, пов'язаних з воєнно-політичним виступом гетьмана України Івана Мазепи та укладенням українсько-шведського союзу", від 01.02.2008 N78/2008 "Про відзначення у 2008 році 360-ї річниці подій, пов'язаних з початком Національно-визвольної війни українського народу середини XVII століття" і від 11.03.2008 N207/2008 "Про відзначення 350-річчя перемоги війська під проводом гетьмана України Івана Виговського
+              у Конотопській битві".
+              </br>
+              </br>
+              "Козаки повинні першими дати суспільству новий імпульс для подальшого руху. Вам, панове товариство, належить дати приклад того, як треба чесно служити своїй країні і своєму народу", сказав В.Ющенко на Першій Великій всеукраїнській козацькій раді на о. Хортиця 4 червня 2005 р.
+              </br>
+              </br>
+              "Козацтво не має чекати праці тільки від когось, а козаки самі мають діяти щоденно: садити дерева, відновлювати козацькі могили, виховувати дітей та ін." – зазначив Президент України Гетьман України Віктор Ющенко на засіданні Ради Українського козацтва 22 травня 2007 року в м. Каневі з приводу практичних дій козацтва на благо України та його суспільства. – "Козацтво має проводити політику маленьких перемог".
+              </br>
+              </br>
+              З усього вищевикладеного випливає, що головною метою спільною діяльності українських козаків є забезпечення реалізації потенціалу козацької ідеї для консолідації українського суспільства.
+              </br>
+              </br>
+              <b>Слава Україні! Слава Українському козацтву!</b>
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+          </div>
+        </div>
+        <!-- /.History -->
+
+
+      </section>
+      <!-- Galary -->
+
+      <section class="section" >
+        <div class="container">
+        <div class="slider_galary">
+          <div class="section__header">
+            <h2 class="section__title" id="galary">Галерея</h2>
+<div class="slider_galary">
+    <div
+      class="slide"
+      style="
+        background-image: url('./assets/images/1.jpg');
+      "
+    >
+      <h3></h3>
+    </div>
+    <div
+      class="slide"
+      style="
+        background-image: url('./assets/images/2.jpg');
+      "
+    >
+      <h3></h3>
+    </div>
+    <div
+      class="slide"
+      style="
+        background-image: url('./assets/images/3.jpg');
+      "
+    >
+      <h3></h3>
     </div>
 
-    <section class="section">
-      <div class="container">
-        <div class="section__header">
-          <h3 class="sectoion__suptitle">What we do</h3>
-          <h2 class="section__title">Story about us</h2>
-          <div class="section__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
 
-        <div class="about">
-          <div class="about__item">
-            <div class="about__img">
-              <img src="assets/images/about/1.jpg" alt="" />
-            </div>
-            <div class="about__text__img">
-              <img src="./assets/images/about/users.png" alt="" />
-            </div>
-            <div class="about__text">Super team</div>
-          </div>
-
-          <div class="about__item">
-            <div class="about__img">
-              <img src="assets/images/about/2.jpg" alt="" />
-            </div>
-            <div class="about__text__img">
-              <img src="./assets/images/about/users.png" alt="" />
-            </div>
-            <div class="about__text">Super team</div>
-          </div>
-          <div class="about__item">
-            <div class="about__img">
-              <img src="assets/images/about/3.jpg" alt="" />
-            </div>
-            <div class="about__text__img">
-              <img src="./assets/images/about/users.png" alt="" />
-            </div>
-            <div class="about__text">Super team</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="fluid__container">
-      <div class="container">
-        <section class="statistic">
-          <div class="statistic__text">
-            <h2 class="statistic__text__suptitle">42</h2>
-            <h3 class="statistic__text__title">Web design projects</h3>
-          </div>
-          <div class="statistic__text">
-            <h2 class="statistic__text__suptitle">123</h2>
-            <h3 class="statistic__text__title">Happy clients</h3>
-          </div>
-          <div class="statistic__text">
-            <h2 class="statistic__text__suptitle">15</h2>
-            <h3 class="statistic__text__title">Awards winner</h3>
-          </div>
-          <div class="statistic__text">
-            <h2 class="statistic__text__suptitle">99</h2>
-            <h3 class="statistic__text__title">Cup of coffe</h3>
-          </div>
-          <div class="statistic__text">
-            <h2 class="statistic__text__suptitle">24</h2>
-            <h3 class="statistic__text__title">Members</h3>
-          </div>
-        </section>
+  </div>
+       </div>
       </div>
     </div>
+      </section> 
+      <!-- ./ Galary -->
+
+      <!-- Organization -->
+      <section class="section" >
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" id="organization_add">Вступити в організацію</h2>
+            <div class="organization">
+              <div class="organization__div">
+                <p class="organization__text">
+                  Ідентифікація себе. як послідовника славнозвісного роду
+                </p>
+              </div>
+              <div class="organization__div">
+                <p class="organization__text">
+                  Збереження та наслідування знань про історію та звички козацтва
+                </p>
+              </div>
+              <div class="organization__div">
+                <p class="organization__text">
+                  Організація активного соціального життя та дозвілля
+                </p>
+              </div>
+              <div class="organization__div">
+                <p class="organization__text">
+                  Виховання нащадків в історично-патріотичному дусі
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /.Organization -->
+      </section>
+
+
+      <!-- Contacts -->
+      <section class="section" >
+        <div class="container">
+          <div class="section__header left_text">
+            <h2 class="section__title" id="contacts">Контакти</h2>
+            <div class="contacts_left">
+              <p class class="contacts_left_text">
+<ul class="list_item">
+  <li class="list_li">Адміністрація:</li>
+  <li>Адреса: м. Київ. вул. Лариси Руденко 6А, БЦ “Колізей“<li>
+  <li>Графік роботи: 9:00 - 18:00</li>
+  <li>Субота, неділя - вихідні</li>
+  <li class="list_li">Інформаційний центр:</li>
+  <li>Телефон для звернень: +38 (044) 585-29-41, +38 (067) 325-55-64</li>
+  <li>Графік роботи: 8:00 - 21:00 у будні.</li>
+  <li>Субота, неділя: 10:00 - 19:00</li>
+  <li>Електронна скринька: <b>kozakvkv@vkv.ua</b></li>
+  <li>Адреса сайту: <b>www.vkv.com.ua</b></li>
+  <li>
+    <iframe class ="map_footer" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2543.4638820111604!2d30.6394201!3d50.3951919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c44e140c140b%3A0x409274d8a6ddf91a!2zNkEsINGD0LsuINCb0LDRgNC40YHRiyDQoNGD0LTQtdC90LrQviwgNtCQLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1626027202430!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </li>
+</ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- /. Contacts -->
+   <!-- /.page -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
